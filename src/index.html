@@ -1,35 +1,43 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ficha de Luna Lovegood</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="card-container">
+    <div class="profile-pic">
+      <img src="https://static.wikia.nocookie.net/wikihp/images/7/72/P6lunaspectespects.jpg/revision/latest/scale-to-width-down/333?cb=20151018130433&path-prefix=es" alt="Luna Lovegood" />
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+    <div class="profile-info">
+      <h1>Luna Lovegood</h1>
+      <h2><i class="fas fa-hat-wizard"></i> Ravenclaw · Estudiante de Hogwarts</h2>
+      <p>Soñadora, excéntrica, brillante y profundamente leal. Luna ve el mundo con una perspectiva única y cree en criaturas que nadie más puede ver.</p>
+
+      <div class="habilidades">
+        <h3><i class="fas fa-magic"></i> Habilidades mágicas</h3>
+        <ul>
+          <li><i class="fas fa-feather-alt"></i> Encantamientos</li>
+          <li><i class="fas fa-brain"></i> Empatía intuitiva</li>
+          <li><i class="fas fa-dragon"></i> Criaturas mágicas</li>
+        </ul>
+      </div>
+
+      <div class="contacto">
+        <p><i class="fas fa-school"></i> Hogwarts · Reino Unido</p>
+        <p><i class="fas fa-envelope"></i> luna@quibbler.com</p>
+        <p><i class="fas fa-scroll"></i> Colaboradora en El Quisquilloso</p>
+      </div>
+
+      <button onclick="mostrarMensaje()">¿Quieres saber algo más?</button>
+      <p id="mensaje"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
 </html>
